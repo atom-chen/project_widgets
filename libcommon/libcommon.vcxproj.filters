@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tinyxml2">
+      <UniqueIdentifier>{6f4e6b13-5a8f-41ad-95d9-f857804a19ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigFile">
+      <UniqueIdentifier>{349a2380-e774-4d82-9b24-f9b93b4e3350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StringFilter">
+      <UniqueIdentifier>{179536d8-c2d4-4113-bd2d-2d51c162bea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AES">
+      <UniqueIdentifier>{06bb58b0-4049-4fe5-96a7-218b712e71d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MD5">
+      <UniqueIdentifier>{3570dc4a-1783-40a5-a060-f29138bd86c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base64">
+      <UniqueIdentifier>{45e9fe45-9f21-4aff-82cb-02fcadb099a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RC4">
+      <UniqueIdentifier>{3df8cabd-941d-46ef-8fd7-fe6b78219da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xxtea">
+      <UniqueIdentifier>{3fa77c40-0549-47c8-b12e-496014b404e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicExcel">
+      <UniqueIdentifier>{d820ad69-c891-45ae-bd83-1064a5b3405d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mpool">
+      <UniqueIdentifier>{27affd5c-4586-4010-8ad7-2535b8787574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cvector">
+      <UniqueIdentifier>{55251b4e-b518-4851-8ae5-933a58830505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fcsv">
+      <UniqueIdentifier>{2ed32e95-bc57-4093-80a2-15c8dbd2a629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidxml">
+      <UniqueIdentifier>{44b4a80c-1d8b-4ee4-8965-27ae2ada0514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SocketTCP">
+      <UniqueIdentifier>{f0fc94b3-2d18-420e-8d50-945b2a25b327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1a1d38e0-6a16-4489-b45b-77fb3bca599e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ByteArray">
+      <UniqueIdentifier>{92b10816-9ef8-4e4b-8e43-85b81805a971}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConfigFile\ConfigFile.cpp">
+      <Filter>ConfigFile</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2\tinyxml2.cpp">
+      <Filter>tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="StringFilter\Trie.cpp">
+      <Filter>StringFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="StringFilter\TrieNode.cpp">
+      <Filter>StringFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="StringFilter\StringFilter.cpp">
+      <Filter>StringFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="AES\AES.cpp">
+      <Filter>AES</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5\MD5.cpp">
+      <Filter>MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="base64\base64.cpp">
+      <Filter>base64</Filter>
+    </ClCompile>
+    <ClCompile Include="RC4\RC4.c">
+      <Filter>RC4</Filter>
+    </ClCompile>
+    <ClCompile Include="xxtea\xxtea.cpp">
+      <Filter>xxtea</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicExcel\BasicExcel.cpp">
+      <Filter>BasicExcel</Filter>
+    </ClCompile>
+    <ClCompile Include="mpool\mpool.c">
+      <Filter>mpool</Filter>
+    </ClCompile>
+    <ClCompile Include="cvector\cvector.c">
+      <Filter>cvector</Filter>
+    </ClCompile>
+    <ClCompile Include="fcsv\fcsv.cpp">
+      <Filter>fcsv</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketTCP\SocketTCP.cpp">
+      <Filter>SocketTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketTCP\SocketTCPHandler.cpp">
+      <Filter>SocketTCP</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteArray\ByteArray.cpp">
+      <Filter>ByteArray</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigFile\ConfigFile.h">
+      <Filter>ConfigFile</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2\tinyxml2.h">
+      <Filter>tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="StringFilter\Trie.h">
+      <Filter>StringFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="StringFilter\TrieNode.h">
+      <Filter>StringFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="StringFilter\StringFilter.h">
+      <Filter>StringFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="AES\AES.h">
+      <Filter>AES</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5\MD5.h">
+      <Filter>MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="base64\base64.h">
+      <Filter>base64</Filter>
+    </ClInclude>
+    <ClInclude Include="RC4\RC4.h">
+      <Filter>RC4</Filter>
+    </ClInclude>
+    <ClInclude Include="xxtea\xxtea.h">
+      <Filter>xxtea</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicExcel\BasicExcel.hpp">
+      <Filter>BasicExcel</Filter>
+    </ClInclude>
+    <ClInclude Include="mpool\mix4win.h">
+      <Filter>mpool</Filter>
+    </ClInclude>
+    <ClInclude Include="mpool\mpool.h">
+      <Filter>mpool</Filter>
+    </ClInclude>
+    <ClInclude Include="mpool\mpool_loc.h">
+      <Filter>mpool</Filter>
+    </ClInclude>
+    <ClInclude Include="cvector\cvector.h">
+      <Filter>cvector</Filter>
+    </ClInclude>
+    <ClInclude Include="fcsv\fcsv.h">
+      <Filter>fcsv</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml.hpp">
+      <Filter>rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml_iterators.hpp">
+      <Filter>rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml_print.hpp">
+      <Filter>rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml_utils.hpp">
+      <Filter>rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketTCP\SocketTCP.h">
+      <Filter>SocketTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketTCP\SocketTCPHandler.h">
+      <Filter>SocketTCP</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteArray\ByteArray.h">
+      <Filter>ByteArray</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

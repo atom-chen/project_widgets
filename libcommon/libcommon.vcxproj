@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67CFC840-F8BC-41F3-A4C9-E8A3AA59DB4A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libcommon</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <AdditionalIncludeDirectories>Common;ConfigFile;StringFilter;AES;RC4;MD5;base64;tinyxml2;xxtea;BasicExcel;mpool;cvector;fcsv;rapidxml;SocketTCP;ByteArray;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <AdditionalIncludeDirectories>Common;ConfigFile;StringFilter;AES;RC4;MD5;base64;tinyxml2;xxtea;BasicExcel;mpool;cvector;fcsv;rapidxml;SocketTCP;ByteArray;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AES\AES.cpp" />
+    <ClCompile Include="base64\base64.cpp" />
+    <ClCompile Include="BasicExcel\BasicExcel.cpp" />
+    <ClCompile Include="ByteArray\ByteArray.cpp" />
+    <ClCompile Include="Common\Common.cpp" />
+    <ClCompile Include="ConfigFile\ConfigFile.cpp" />
+    <ClCompile Include="cvector\cvector.c" />
+    <ClCompile Include="fcsv\fcsv.cpp" />
+    <ClCompile Include="MD5\MD5.cpp" />
+    <ClCompile Include="mpool\mpool.c" />
+    <ClCompile Include="RC4\RC4.c" />
+    <ClCompile Include="SocketTCP\SocketTCP.cpp" />
+    <ClCompile Include="SocketTCP\SocketTCPHandler.cpp" />
+    <ClCompile Include="StringFilter\StringFilter.cpp" />
+    <ClCompile Include="StringFilter\Trie.cpp" />
+    <ClCompile Include="StringFilter\TrieNode.cpp" />
+    <ClCompile Include="tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="xxtea\xxtea.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AES\AES.h" />
+    <ClInclude Include="base64\base64.h" />
+    <ClInclude Include="BasicExcel\BasicExcel.hpp" />
+    <ClInclude Include="ByteArray\ByteArray.h" />
+    <ClInclude Include="Common\Common.h" />
+    <ClInclude Include="ConfigFile\ConfigFile.h" />
+    <ClInclude Include="cvector\cvector.h" />
+    <ClInclude Include="fcsv\fcsv.h" />
+    <ClInclude Include="MD5\MD5.h" />
+    <ClInclude Include="mpool\mix4win.h" />
+    <ClInclude Include="mpool\mpool.h" />
+    <ClInclude Include="mpool\mpool_loc.h" />
+    <ClInclude Include="rapidxml\rapidxml.hpp" />
+    <ClInclude Include="rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="RC4\RC4.h" />
+    <ClInclude Include="SocketTCP\SocketTCP.h" />
+    <ClInclude Include="SocketTCP\SocketTCPHandler.h" />
+    <ClInclude Include="StringFilter\StringFilter.h" />
+    <ClInclude Include="StringFilter\Trie.h" />
+    <ClInclude Include="StringFilter\TrieNode.h" />
+    <ClInclude Include="tinyxml2\tinyxml2.h" />
+    <ClInclude Include="xxtea\xxtea.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
